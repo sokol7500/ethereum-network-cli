@@ -1,14 +1,14 @@
 #!/bin/bash
 
-# СОХРАНЯЕМ СИСТЕМНУЮ ЛОКАЛЬ ДО ПЕРЕОПРЕДЕЛЕНИЯ
+# SAVE SYSTEM LOCALE BEFORE OVERRIDE
 SYSTEM_LANG="$LANG"
 
-# Установка UTF-8 для корректного отображения эмодзи
+# Set UTF-8 for correct emoji display
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 # =============================================================================
-# 🎨 ЛОГОТИП ETHEREUM
+# 🎨 ETHEREUM LOGO
 # =============================================================================
 
 RED='\033[0;31m'
@@ -46,7 +46,7 @@ print_gradient_line_with_blocks() {
 }
 
 # =============================================================================
-# 🎨 ФУНКЦИИ ПЕРЕВОДОВ
+# 🎨 TRANSLATION FUNCTIONS
 # =============================================================================
 
 declare -A TRANSLATIONS
@@ -88,7 +88,7 @@ get_text() {
 }
 
 # =============================================================================
-# 🎨 ОПРЕДЕЛЕНИЕ ЯЗЫКА
+# 🎨 LANGUAGE DETECTION
 # =============================================================================
 
 detect_lang_code() {
@@ -98,7 +98,7 @@ detect_lang_code() {
 }
 
 # =============================================================================
-# 🎨 ФУНКЦИЯ ВЫБОРА РЕЖИМА ДОСТУПА
+# 🎨 ACCESS MODE SELECTION
 # =============================================================================
 
 select_access_mode() {
@@ -134,7 +134,7 @@ select_access_mode() {
 }
 
 # =============================================================================
-# 🎨 ОСНОВНАЯ ЧАСТЬ
+# 🎨 MAIN PART
 # =============================================================================
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -142,19 +142,19 @@ cd "$SCRIPT_DIR"
 mkdir -p locales
 
 # =============================================================================
-# 1. ОПРЕДЕЛЯЕМ ЯЗЫК СИСТЕМЫ
+# 1. DETECT SYSTEM LANGUAGE
 # =============================================================================
 
 DETECTED_CODE=$(detect_lang_code "$SYSTEM_LANG")
 
-# Флаги
+# Flags
 declare -A LANG_FLAGS
 LANG_FLAGS=(
     ["ru"]="🇷🇺" ["en"]="🇺🇸" ["es"]="🇪🇸" ["fr"]="🇫🇷" ["it"]="🇮🇹"
     ["pt"]="🇵🇹" ["de"]="🇩🇪" ["ja"]="🇯🇵" ["zh"]="🇨🇳" ["ko"]="🇰🇷"
 )
 
-# Соответствие: код → имя папки
+# Mapping: code → folder name
 declare -A LANG_FOLDER
 LANG_FOLDER=(
     ["ru"]="Русский"   ["en"]="English"   ["es"]="Español"
@@ -163,10 +163,10 @@ LANG_FOLDER=(
     ["ko"]="한국어"
 )
 
-# Порядок для перебора
+# Iteration order
 LANG_ORDER=(ru en es fr it pt de ja zh ko)
 
-# Собираем список ТОЛЬКО из СУЩЕСТВУЮЩИХ ПАПОК
+# Build list ONLY from EXISTING folders
 declare -a LANG_LIST
 LANG_COUNT=0
 
@@ -177,7 +177,6 @@ for code in "${LANG_ORDER[@]}"; do
     
     LANG_COUNT=$((LANG_COUNT + 1))
     
-    # Читаем отображаемое имя из файла переводов
     display_name=""
     for loc in "locales/${code}.txt" "${code}.txt"; do
         if [ -f "$loc" ]; then
@@ -195,7 +194,7 @@ if [ $LANG_COUNT -eq 0 ]; then
     exit 1
 fi
 
-# Находим системный язык
+# Find system language
 DETECTED_NAME=""
 DETECTED_FOLDER=""
 for item in "${LANG_LIST[@]}"; do
@@ -217,12 +216,12 @@ if [ -z "$DETECTED_NAME" ]; then
 fi
 
 # =============================================================================
-# 2. ЗАГРУЖАЕМ ПЕРЕВОДЫ
+# 2. LOAD TRANSLATIONS
 # =============================================================================
 load_translations "$DETECTED_CODE"
 
 # =============================================================================
-# 3. МЕНЮ ВЫБОРА ЯЗЫКА
+# 3. LANGUAGE SELECTION MENU
 # =============================================================================
 
 clear
@@ -273,7 +272,6 @@ echo -n "$(get_text "your_choice") (Enter = $DETECTED_NAME, 1-$LANG_COUNT): "
 read lang_choice
 echo ""
 
-# Определяем выбранный язык
 SELECTED_CODE=""
 SELECTED_NAME=""
 SELECTED_FOLDER=""
@@ -305,25 +303,21 @@ fi
 echo -e "${GREEN}[INFO] $(get_text "selected_lang"): $SELECTED_NAME${NC}"
 echo ""
 
-# ВСЕГДА перезагружаем переводы
 load_translations "$SELECTED_CODE"
 
-# Проверяем ПАПКУ (используем SELECTED_FOLDER)
 if [ ! -d "$SELECTED_FOLDER" ]; then
     echo -e "${RED}[ERROR] $(get_text "folder_not_found"): '$SELECTED_FOLDER'${NC}"
-    echo -e "${YELLOW}Доступные папки:${NC}"
-    ls -d */ 2>/dev/null || echo "  (нет папок)"
     exit 1
 fi
 
 # =============================================================================
-# 4. ВЫБОР РЕЖИМА ДОСТУПА
+# 4. ACCESS MODE SELECTION
 # =============================================================================
 
 select_access_mode
 
 # =============================================================================
-# 5. ПЕРЕРИСОВЫВАЕМ ЛОГОТИП
+# 5. REDRAW LOGO
 # =============================================================================
 
 clear
@@ -353,7 +347,7 @@ echo -e "${CYAN}                   $(get_text "subtitle")${NC}"
 echo ""
 
 # =============================================================================
-# 6. ВЫБОР ОС
+# 6. OS SELECTION
 # =============================================================================
 
 echo -e "${CYAN}════════════════════════════════════════════════════════════════════${NC}"
@@ -392,27 +386,44 @@ echo -e "${GREEN}[INFO]${NC} $(get_text "selected"): $DISTRO"
 echo ""
 
 # =============================================================================
-# 7. ЗАПРОС ПАРОЛЯ
+# 7. PASSWORD REQUEST
 # =============================================================================
 
 echo -e "${BLUE}════════════════════════════════════════════════════════════════════${NC}"
 echo -e "${BLUE}                    $(get_text "password_required")${NC}"
 echo -e "${BLUE}════════════════════════════════════════════════════════════════════${NC}"
 echo ""
-echo -e "${YELLOW}$(get_text "password_request")${NC}"
-echo ""
 
-if ! sudo -v 2>/dev/null; then
-    echo -e "${RED}${CROSS} $(get_text "wrong_password")${NC}"
+PASSWORD_OK=false
+
+if sudo -v 2>/dev/null; then
+    PASSWORD_OK=true
+fi
+
+if [ "$PASSWORD_OK" = false ]; then
+    echo -e "${YELLOW}Enter root password:${NC}"
+    echo -ne "${CYAN}Password: ${NC}"
+    stty -echo
+    read -r SUDO_PASS
+    stty echo
+    echo ""
+    
+    if echo "$SUDO_PASS" | sudo -S -v 2>/dev/null; then
+        PASSWORD_OK=true
+        sudo() { echo "$SUDO_PASS" | command sudo -S "$@"; }
+    fi
+fi
+
+if [ "$PASSWORD_OK" = false ]; then
+    echo -e "${RED}${CROSS} Wrong password!${NC}"
     exit 1
 fi
 
-echo -e "${GREEN}${CHECK} $(get_text "auth_success")${NC}"
-sleep 1
 echo ""
+sleep 1
 
 # =============================================================================
-# 8. НАСТРОЙКА SUDO
+# 8. SUDO SETUP
 # =============================================================================
 
 if [ -n "$SUDO_USER" ] && [ "$SUDO_USER" != "root" ]; then
@@ -426,7 +437,7 @@ if [ "$ACCESS_MODE" = "nopasswd" ] && [ -n "$REAL_USER" ] && [ "$REAL_USER" != "
     
     SUDOERS_RULES=(
         "$REAL_USER ALL=(ALL) NOPASSWD: /usr/local/bin/go-ethereum-cli"
-        "$REAL_USER ALL=(ALL) NOPASSWD: /usr/local/bin/crypto_wallet/main.sh"
+        "$REAL_USER ALL=(ALL) NOPASSWD: /usr/local/bin/crypto_wallet/main.bin"
     )
     
     TEMP_SUDOERS=$(mktemp)
@@ -456,7 +467,7 @@ if [ "$ACCESS_MODE" = "nopasswd" ] && [ -n "$REAL_USER" ] && [ "$REAL_USER" != "
 fi
 
 # =============================================================================
-# 9. ПОИСК И ЗАПУСК УСТАНОВОЧНОГО СКРИПТА
+# 9. FIND AND RUN INSTALL SCRIPT
 # =============================================================================
 
 INSTALL_SCRIPT_NAME=""
@@ -497,20 +508,8 @@ fi
 if [ -n "$INSTALL_SCRIPT_NAME" ]; then
     echo -e "${BLUE}[STEP]${NC} $(get_text "install_packages") $DISTRO..."
     chmod +x "$INSTALL_SCRIPT_NAME"
-    
-    if [ "$EUID" -ne 0 ]; then
-        sudo bash "$INSTALL_SCRIPT_NAME"
-        SCRIPT_EXIT_CODE=$?
-    else
-        bash "$INSTALL_SCRIPT_NAME"
-        SCRIPT_EXIT_CODE=$?
-    fi
-    
-    if [ $SCRIPT_EXIT_CODE -ne 0 ]; then
-        echo -e "${YELLOW}[WARNING]${NC} $(get_text "install_error")"
-    else
-        echo -e "${GREEN}${CHECK}${NC} $(get_text "install_success")"
-    fi
+    sudo bash "$INSTALL_SCRIPT_NAME"
+    echo -e "${GREEN}${CHECK}${NC} $(get_text "install_success")"
 else
     echo -e "${RED}[ERROR]${NC} $(get_text "install_script_not_found")"
     ls -la
@@ -522,7 +521,7 @@ cd "$SCRIPT_DIR"
 echo ""
 
 # =============================================================================
-# 10. КОПИРОВАНИЕ ФАЙЛОВ
+# 10. COPY FILES
 # =============================================================================
 
 TARGET_DIR="/usr/local/bin/crypto_wallet"
@@ -545,17 +544,17 @@ FILES=(
 
 for file in "${FILES[@]}"; do
     SOURCE=""
-    TARGET_EXT=".sh"
+    TARGET_EXT=".bin"
     
-    if [ -f "$SELECTED_FOLDER/${file}.sh" ]; then
-        SOURCE="$SELECTED_FOLDER/${file}.sh"
-        TARGET_EXT=".sh"
-    elif [ -f "$SELECTED_FOLDER/${file}.bin" ]; then
+    if [ -f "$SELECTED_FOLDER/${file}.bin" ]; then
         SOURCE="$SELECTED_FOLDER/${file}.bin"
         TARGET_EXT=".bin"
+    elif [ -f "$SELECTED_FOLDER/${file}.sh" ]; then
+        SOURCE="$SELECTED_FOLDER/${file}.sh"
+        TARGET_EXT=".sh"
     elif [ -f "$SELECTED_FOLDER/$file" ]; then
         SOURCE="$SELECTED_FOLDER/$file"
-        TARGET_EXT=".sh"
+        TARGET_EXT=".bin"
     fi
     
     if [ -n "$SOURCE" ]; then
@@ -563,12 +562,12 @@ for file in "${FILES[@]}"; do
         sudo chmod +x "$TARGET_DIR/${file}${TARGET_EXT}"
         echo -e "  ${GREEN}✓${NC} ${file}${TARGET_EXT}"
     else
-        echo -e "  ${YELLOW}⚠${NC} $file — не найден"
+        echo -e "  ${YELLOW}⚠${NC} $file — not found"
     fi
 done
 echo ""
 
-# Иконка
+# Icon
 if [ -f "ethereum.png" ]; then
     for dir in /usr/share/icons/hicolor/128x128/apps /usr/share/pixmaps /usr/local/share/icons; do
         sudo mkdir -p "$dir"
@@ -577,17 +576,30 @@ if [ -f "ethereum.png" ]; then
 fi
 echo ""
 
-# Симлинк
-sudo ln -sf "$TARGET_DIR/main.sh" "/usr/local/bin/go-ethereum-cli"
-sudo chmod +x "/usr/local/bin/go-ethereum-cli" 2>/dev/null
+# =============================================================================
+# CREATE WRAPPER
+# =============================================================================
+
+echo -e "${BLUE}[STEP]${NC} Creating wrapper..."
+
+WRAPPER_PATH="/usr/local/bin/go-ethereum-cli"
+sudo rm -f "$WRAPPER_PATH" 2>/dev/null
+
+sudo tee "$WRAPPER_PATH" > /dev/null << WRAPPER_EOF
+#!/bin/bash
+cd /usr/local/bin/crypto_wallet || exit 1
+exec bash main.bin "\$@"
+WRAPPER_EOF
+
+sudo chmod +x "$WRAPPER_PATH"
+echo -e "  ${GREEN}✓${NC} Wrapper: $WRAPPER_PATH"
 echo ""
 
-# Desktop
-if [ "$ACCESS_MODE" = "nopasswd" ]; then
-    DESKTOP_EXEC="sudo /usr/local/bin/go-ethereum-cli"
-else
-    DESKTOP_EXEC="pkexec /usr/local/bin/go-ethereum-cli"
-fi
+# =============================================================================
+# DESKTOP
+# =============================================================================
+
+DESKTOP_EXEC="sudo /usr/local/bin/go-ethereum-cli"
 
 DESKTOP="[Desktop Entry]
 Version=1.0
@@ -615,6 +627,9 @@ fi
 if [ -n "$USER_HOME" ] && [ -f "$USER_HOME/.bashrc" ]; then
     grep -q "/usr/local/bin" "$USER_HOME/.bashrc" 2>/dev/null || echo 'export PATH=/usr/local/bin:$PATH' >> "$USER_HOME/.bashrc"
 fi
+
+# Cleanup
+unset SUDO_PASS 2>/dev/null
 
 echo ""
 echo -e "${CYAN}════════════════════════════════════════════════════════════════════${NC}"
