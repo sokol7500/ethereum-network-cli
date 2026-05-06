@@ -1,0 +1,113 @@
+# 언어 선택
+select_lang=인터페이스 언어 선택
+system_lang=시스템 LANG 값
+auto_detected=자동 감지된 언어
+press_enter=Enter를 눌러 사용
+or_select_number=또는 언어 번호 선택
+your_choice=선택
+using_auto=자동 감지된 언어 사용
+invalid_choice=잘못된 선택
+using_default=기본값으로 영어 사용
+selected_lang=선택된 언어
+default_selected=한국어가 기본값으로 선택됨
+
+# 접근 모드
+access_mode_title=접근 모드 선택
+select_access_mode=프로그램 시작 모드 선택:
+without_password=비밀번호 없음
+without_password_desc=비밀번호 없이 프로그램 실행 (sudo NOPASSWD 설정 필요)
+with_password=비밀번호 필요
+with_password_desc=시작할 때마다 비밀번호 필요 (표준 보안 모드)
+selected_without_password=선택 모드: 비밀번호 없음
+selected_with_password=선택 모드: 비밀번호 필요
+access_mode=접근 모드
+no_password_required=비밀번호 불필요
+password_required_info=비밀번호 필요
+invalid_choice_default=잘못된 선택, 모드 사용: 비밀번호 필요
+
+# OS 선택
+select_os=운영체제 선택
+arch=Arch Linux / Manjaro
+ubuntu=Ubuntu / Debian
+gentoo=Gentoo Linux
+auto_detect_os=자동 감지
+selected=선택됨
+
+# 비밀번호 및 인증
+password_required=인증 필요
+password_request=설치에 관리자 권한이 필요합니다
+wrong_password=비밀번호가 틀렸거나 sudo 권한이 없습니다
+check_sudo_group=사용자가 sudo 그룹에 추가되었는지 확인하세요
+auth_success=인증 성공
+
+# 설치
+install_packages=패키지 설치 시작:
+found_script=스크립트 찾음
+install_success=패키지 설치 성공적으로 완료
+install_error=패키지 설치 오류 발생
+install_script_not_found=설치 스크립트를 찾을 수 없음
+
+# 스크립트 검색
+looking_for_script=설치 스크립트 검색 중:
+available_files=사용 가능한 파일
+found=찾음
+files_in_folder=폴더 내 파일
+folder_not_found=폴더를 찾을 수 없음
+
+# 폴더 및 파일 생성
+create_folder=지갑 폴더 생성 중
+folder_exists=/root/.ethereum/keystore 폴더가 이미 존재함
+folder_created=/root/.ethereum/keystore 폴더 생성됨
+permissions_set=권한 설정됨 (700)
+create_dir=디렉토리 생성 중
+copy_files=파일 복사 및 구성 중
+copy_icon=아이콘 복사 중
+create_symlink=심볼릭 링크 생성 중
+create_desktop=애플리케이션 메뉴용 .desktop 파일 생성 중
+
+# 캐시 업데이트
+update_cache=아이콘 캐시 및 데이터베이스 업데이트 중
+
+# Sudo 설정
+setup_sudo=비밀번호 없는 시작을 위한 sudo 구성 중
+setup_sudo_nopasswd=비밀번호 없는 시작을 위한 sudo NOPASSWD 설정 중...
+sudo_rule_added=사용자에 대한 sudoers 규칙 추가됨
+rule_added=규칙 추가됨
+rules_exist=sudoers에 규칙이 이미 존재함
+sudo_syntax_error=sudoers 구문 오류, 규칙이 추가되지 않음
+
+# PATH
+setup_path=PATH 구성
+
+# 설치 완료
+install_complete=설치 완료
+files_installed=📁 설치된 파일
+wallet_folder=📁 지갑 폴더
+language=🌐 언어
+os=💻 운영체제
+launch_methods=🚀 실행 방법
+terminal=터미널에서
+menu=애플리케이션 메뉴에서
+no_password=비밀번호 없음
+important=📌 중요
+wallets_saved=지갑 저장 위치:
+menu_appearance=메뉴에 표시하려면 실행:
+logout_required=또는 로그아웃 후 다시 로그인
+
+# 확인
+verification=설치 확인
+desktop_created=.desktop 파일 생성됨
+command_available=go-ethereum-cli 명령 사용 가능
+wallet_folder_ready=/root/.ethereum/keystore 폴더 준비됨
+
+# 정리
+delete_source=소스 파일을 삭제하시겠습니까? (y/n)
+source_deleted=소스 파일 삭제됨
+
+# 최종
+done=완료
+now_available=프로그램이 메뉴에 'Go Ethereum-cli'로 표시됩니다
+launch=실행
+or_from_menu=또는 애플리케이션 메뉴에서
+subtitle=이더리움 암호화폐 지갑 관리
+app_description=이더리움 암호화폐 지갑 관리

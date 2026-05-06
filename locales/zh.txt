@@ -1,0 +1,113 @@
+# 语言选择
+select_lang=选择界面语言
+system_lang=系统LANG值
+auto_detected=自动检测的语言
+press_enter=按Enter使用
+or_select_number=或选择语言编号
+your_choice=您的选择
+using_auto=使用自动检测的语言
+invalid_choice=无效选择
+using_default=默认使用英语
+selected_lang=已选择语言
+default_selected=默认选择中文
+
+# 访问模式
+access_mode_title=选择访问模式
+select_access_mode=选择程序启动模式:
+without_password=无需密码
+without_password_desc=程序无需密码启动（需要配置sudo NOPASSWD）
+with_password=需要密码
+with_password_desc=每次启动需要密码（标准安全模式）
+selected_without_password=已选择模式: 无需密码
+selected_with_password=已选择模式: 需要密码
+access_mode=访问模式
+no_password_required=无需密码
+password_required_info=需要密码
+invalid_choice_default=无效选择，使用模式: 需要密码
+
+# 操作系统选择
+select_os=选择操作系统
+arch=Arch Linux / Manjaro
+ubuntu=Ubuntu / Debian
+gentoo=Gentoo Linux
+auto_detect_os=自动检测
+selected=已选择
+
+# 密码和认证
+password_required=需要认证
+password_request=安装需要管理员权限
+wrong_password=密码错误或没有sudo权限
+check_sudo_group=请确保用户已添加到sudo组
+auth_success=认证成功
+
+# 安装
+install_packages=开始安装软件包:
+found_script=找到脚本
+install_success=软件包安装成功完成
+install_error=软件包安装完成但有错误
+install_script_not_found=未找到安装脚本
+
+# 脚本搜索
+looking_for_script=正在搜索安装脚本:
+available_files=可用文件
+found=已找到
+files_in_folder=文件夹中的文件
+folder_not_found=未找到文件夹
+
+# 创建文件夹和文件
+create_folder=创建钱包文件夹
+folder_exists=文件夹 /root/.ethereum/keystore 已存在
+folder_created=文件夹 /root/.ethereum/keystore 已创建
+permissions_set=权限已设置 (700)
+create_dir=创建目录
+copy_files=复制和配置文件
+copy_icon=复制图标
+create_symlink=创建符号链接
+create_desktop=创建应用程序菜单.desktop文件
+
+# 缓存更新
+update_cache=更新图标缓存和数据库
+
+# Sudo设置
+setup_sudo=配置sudo免密码启动
+setup_sudo_nopasswd=设置sudo NOPASSWD免密码启动...
+sudo_rule_added=已为用户添加sudoers规则
+rule_added=规则已添加
+rules_exist=sudoers中已存在规则
+sudo_syntax_error=sudoers语法错误，规则未添加
+
+# PATH
+setup_path=PATH配置
+
+# 安装完成
+install_complete=安装完成
+files_installed=📁 已安装文件
+wallet_folder=📁 钱包文件夹
+language=🌐 语言
+os=💻 操作系统
+launch_methods=🚀 启动方式
+terminal=从终端
+menu=从应用程序菜单
+no_password=无需密码
+important=📌 重要
+wallets_saved=钱包将存储在
+menu_appearance=要在菜单中显示，请运行
+logout_required=或注销并重新登录
+
+# 验证
+verification=安装验证
+desktop_created=.desktop文件已创建
+command_available=go-ethereum-cli命令可用
+wallet_folder_ready=文件夹 /root/.ethereum/keystore 已就绪
+
+# 清理
+delete_source=删除源文件？ (y/n)
+source_deleted=源文件已删除
+
+# 最终
+done=完成
+now_available=程序在菜单中名为 'Go Ethereum-cli'
+launch=启动
+or_from_menu=或从应用程序菜单
+subtitle=以太坊加密货币钱包管理
+app_description=以太坊加密货币钱包管理

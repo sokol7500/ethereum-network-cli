@@ -1,0 +1,113 @@
+# Selección de idioma
+select_lang=SELECCIONAR IDIOMA DE INTERFAZ
+system_lang=Valor LANG del sistema
+auto_detected=Idioma detectado automáticamente
+press_enter=Presione Enter para usar
+or_select_number=o seleccione número de idioma
+your_choice=Su elección
+using_auto=Usando idioma detectado automáticamente
+invalid_choice=Elección inválida
+using_default=usando English por defecto
+selected_lang=Idioma seleccionado
+default_selected=Español seleccionado por defecto
+
+# Modo de acceso
+access_mode_title=SELECCIONAR MODO DE ACCESO
+select_access_mode=Seleccione modo de inicio del programa:
+without_password=Sin contraseña
+without_password_desc=el programa se ejecutará sin solicitar contraseña (requiere configuración sudo NOPASSWD)
+with_password=Con contraseña
+with_password_desc=se solicitará contraseña en cada inicio (modo de seguridad estándar)
+selected_without_password=Modo seleccionado: SIN CONTRASEÑA
+selected_with_password=Modo seleccionado: CON CONTRASEÑA
+access_mode=Modo de acceso
+no_password_required=contraseña no requerida
+password_required_info=contraseña requerida
+invalid_choice_default=Elección inválida, usando modo: CON CONTRASEÑA
+
+# Selección de SO
+select_os=SELECCIONAR SISTEMA OPERATIVO
+arch=Arch Linux / Manjaro
+ubuntu=Ubuntu / Debian
+gentoo=Gentoo Linux
+auto_detect_os=Detectar automáticamente
+selected=Seleccionado
+
+# Contraseña y autenticación
+password_required=AUTENTICACIÓN REQUERIDA
+password_request=Se requieren derechos de administrador para la instalación
+wrong_password=Contraseña incorrecta o sin derechos sudo
+check_sudo_group=Asegúrese de que el usuario esté en el grupo sudo
+auth_success=Autenticación exitosa
+
+# Instalación
+install_packages=Iniciando instalación de paquetes para
+found_script=Script encontrado
+install_success=Instalación de paquetes completada con éxito
+install_error=Instalación de paquetes completada con errores
+install_script_not_found=Script de instalación no encontrado
+
+# Búsqueda de scripts
+looking_for_script=Buscando script de instalación en
+available_files=Archivos disponibles
+found=Encontrado
+files_in_folder=Archivos en carpeta
+folder_not_found=Carpeta no encontrada
+
+# Creación de carpetas y archivos
+create_folder=Creando carpeta de billeteras
+folder_exists=La carpeta /root/.ethereum/keystore ya existe
+folder_created=Carpeta /root/.ethereum/keystore creada
+permissions_set=Permisos establecidos (700)
+create_dir=Creando directorio
+copy_files=Copiando y configurando archivos
+copy_icon=Copiando icono
+create_symlink=Creando enlace simbólico
+create_desktop=Creando archivo .desktop para menú de aplicaciones
+
+# Actualización de caché
+update_cache=Actualizando caché de iconos y bases de datos
+
+# Configuración de sudo
+setup_sudo=Configurando sudo para inicio sin contraseña
+setup_sudo_nopasswd=Configurando sudo NOPASSWD para inicio sin contraseña...
+sudo_rule_added=Regla sudoers añadida para usuario
+rule_added=Regla añadida
+rules_exist=Las reglas ya existen en sudoers
+sudo_syntax_error=Error de sintaxis en sudoers, reglas no añadidas
+
+# PATH
+setup_path=Configuración de PATH
+
+# Instalación completa
+install_complete=INSTALACIÓN COMPLETADA
+files_installed=📁 Archivos instalados
+wallet_folder=📁 Carpeta de billeteras
+language=🌐 Idioma
+os=💻 SO
+launch_methods=🚀 Métodos de inicio
+terminal=Desde terminal
+menu=Desde menú de aplicaciones
+no_password=sin contraseña
+important=📌 Importante
+wallets_saved=Las billeteras se almacenarán en
+menu_appearance=Para aparecer en el menú ejecute
+logout_required=O cierre sesión e inicie de nuevo
+
+# Verificación
+verification=Verificación de instalación
+desktop_created=Archivo .desktop creado
+command_available=Comando go-ethereum-cli disponible
+wallet_folder_ready=Carpeta /root/.ethereum/keystore lista
+
+# Limpieza
+delete_source=¿Eliminar archivos fuente? (y/n)
+source_deleted=Archivos fuente eliminados
+
+# Final
+done=HECHO
+now_available=El programa ahora se llama 'Go Ethereum-cli' en el menú
+launch=Iniciar
+or_from_menu=o desde menú de aplicaciones
+subtitle=Gestión de Billetera Crypto Ethereum
+app_description=Gestión de Billetera Crypto Ethereum

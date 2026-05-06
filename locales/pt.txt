@@ -1,0 +1,113 @@
+# Seleção de idioma
+select_lang=SELECIONAR IDIOMA DA INTERFACE
+system_lang=Valor LANG do sistema
+auto_detected=Idioma detectado automaticamente
+press_enter=Pressione Enter para usar
+or_select_number=ou selecione o número do idioma
+your_choice=Sua escolha
+using_auto=Usando idioma detectado automaticamente
+invalid_choice=Escolha inválida
+using_default=usando English por padrão
+selected_lang=Idioma selecionado
+default_selected=Português selecionado por padrão
+
+# Modo de acesso
+access_mode_title=SELECIONAR MODO DE ACESSO
+select_access_mode=Selecione o modo de inicialização do programa:
+without_password=Sem senha
+without_password_desc=o programa será executado sem solicitar senha (requer configuração sudo NOPASSWD)
+with_password=Com senha
+with_password_desc=a senha será solicitada a cada inicialização (modo de segurança padrão)
+selected_without_password=Modo selecionado: SEM SENHA
+selected_with_password=Modo selecionado: COM SENHA
+access_mode=Modo de acesso
+no_password_required=senha não necessária
+password_required_info=senha necessária
+invalid_choice_default=Escolha inválida, usando modo: COM SENHA
+
+# Seleção de SO
+select_os=SELECIONAR SISTEMA OPERACIONAL
+arch=Arch Linux / Manjaro
+ubuntu=Ubuntu / Debian
+gentoo=Gentoo Linux
+auto_detect_os=Detectar automaticamente
+selected=Selecionado
+
+# Senha e autenticação
+password_required=AUTENTICAÇÃO NECESSÁRIA
+password_request=Direitos de administrador necessários para instalação
+wrong_password=Senha incorreta ou sem direitos sudo
+check_sudo_group=Certifique-se de que o usuário está no grupo sudo
+auth_success=Autenticação bem-sucedida
+
+# Instalação
+install_packages=Iniciando instalação de pacotes para
+found_script=Script encontrado
+install_success=Instalação de pacotes concluída com sucesso
+install_error=Instalação de pacotes concluída com erros
+install_script_not_found=Script de instalação não encontrado
+
+# Busca de scripts
+looking_for_script=Procurando script de instalação em
+available_files=Arquivos disponíveis
+found=Encontrado
+files_in_folder=Arquivos na pasta
+folder_not_found=Pasta não encontrada
+
+# Criação de pastas e arquivos
+create_folder=Criando pasta de carteiras
+folder_exists=A pasta /root/.ethereum/keystore já existe
+folder_created=Pasta /root/.ethereum/keystore criada
+permissions_set=Permissões definidas (700)
+create_dir=Criando diretório
+copy_files=Copiando e configurando arquivos
+copy_icon=Copiando ícone
+create_symlink=Criando link simbólico
+create_desktop=Criando arquivo .desktop para menu de aplicativos
+
+# Atualização de cache
+update_cache=Atualizando cache de ícones e bancos de dados
+
+# Configuração sudo
+setup_sudo=Configurando sudo para inicialização sem senha
+setup_sudo_nopasswd=Configurando sudo NOPASSWD para inicialização sem senha...
+sudo_rule_added=Regra sudoers adicionada para usuário
+rule_added=Regra adicionada
+rules_exist=As regras já existem no sudoers
+sudo_syntax_error=Erro de sintaxe sudoers, regras não adicionadas
+
+# PATH
+setup_path=Configuração do PATH
+
+# Instalação concluída
+install_complete=INSTALAÇÃO CONCLUÍDA
+files_installed=📁 Arquivos instalados
+wallet_folder=📁 Pasta de carteiras
+language=🌐 Idioma
+os=💻 SO
+launch_methods=🚀 Métodos de inicialização
+terminal=Do terminal
+menu=Do menu de aplicativos
+no_password=sem senha
+important=📌 Importante
+wallets_saved=As carteiras serão armazenadas em
+menu_appearance=Para aparecer no menu execute
+logout_required=Ou saia e faça login novamente
+
+# Verificação
+verification=Verificação da instalação
+desktop_created=Arquivo .desktop criado
+command_available=Comando go-ethereum-cli disponível
+wallet_folder_ready=Pasta /root/.ethereum/keystore pronta
+
+# Limpeza
+delete_source=Excluir arquivos fonte? (y/n)
+source_deleted=Arquivos fonte excluídos
+
+# Final
+done=PRONTO
+now_available=O programa agora se chama 'Go Ethereum-cli' no menu
+launch=Iniciar
+or_from_menu=ou do menu de aplicativos
+subtitle=Gerenciamento de Carteira Crypto Ethereum
+app_description=Gerenciamento de Carteira Crypto Ethereum

@@ -1,0 +1,113 @@
+# Sélection de la langue
+select_lang=SÉLECTIONNER LA LANGUE DE L'INTERFACE
+system_lang=Valeur LANG du système
+auto_detected=Langue détectée automatiquement
+press_enter=Appuyez sur Entrée pour utiliser
+or_select_number=ou sélectionnez le numéro de langue
+your_choice=Votre choix
+using_auto=Utilisation de la langue détectée automatiquement
+invalid_choice=Choix invalide
+using_default=utilisation de l'anglais par défaut
+selected_lang=Langue sélectionnée
+default_selected=Français sélectionné par défaut
+
+# Mode d'accès
+access_mode_title=SÉLECTIONNER LE MODE D'ACCÈS
+select_access_mode=Sélectionnez le mode de lancement du programme:
+without_password=Sans mot de passe
+without_password_desc=le programme se lance sans demande de mot de passe (nécessite la configuration sudo NOPASSWD)
+with_password=Avec mot de passe
+with_password_desc=le mot de passe sera demandé à chaque lancement (mode de sécurité standard)
+selected_without_password=Mode sélectionné: SANS MOT DE PASSE
+selected_with_password=Mode sélectionné: AVEC MOT DE PASSE
+access_mode=Mode d'accès
+no_password_required=mot de passe non requis
+password_required_info=mot de passe requis
+invalid_choice_default=Choix invalide, utilisation du mode: AVEC MOT DE PASSE
+
+# Sélection de l'OS
+select_os=SÉLECTIONNER LE SYSTÈME D'EXPLOITATION
+arch=Arch Linux / Manjaro
+ubuntu=Ubuntu / Debian
+gentoo=Gentoo Linux
+auto_detect_os=Détection automatique
+selected=Sélectionné
+
+# Mot de passe et authentification
+password_required=AUTHENTIFICATION REQUISE
+password_request=Droits administrateur requis pour l'installation
+wrong_password=Mot de passe incorrect ou pas de droits sudo
+check_sudo_group=Assurez-vous que l'utilisateur est dans le groupe sudo
+auth_success=Authentification réussie
+
+# Installation
+install_packages=Démarrage de l'installation des paquets pour
+found_script=Script trouvé
+install_success=Installation des paquets terminée avec succès
+install_error=Installation des paquets terminée avec des erreurs
+install_script_not_found=Script d'installation introuvable
+
+# Recherche de scripts
+looking_for_script=Recherche du script d'installation dans
+available_files=Fichiers disponibles
+found=Trouvé
+files_in_folder=Fichiers dans le dossier
+folder_not_found=Dossier introuvable
+
+# Création de dossiers et fichiers
+create_folder=Création du dossier de portefeuilles
+folder_exists=Le dossier /root/.ethereum/keystore existe déjà
+folder_created=Dossier /root/.ethereum/keystore créé
+permissions_set=Permissions définies (700)
+create_dir=Création du répertoire
+copy_files=Copie et configuration des fichiers
+copy_icon=Copie de l'icône
+create_symlink=Création du lien symbolique
+create_desktop=Création du fichier .desktop pour le menu d'applications
+
+# Mise à jour du cache
+update_cache=Mise à jour du cache d'icônes et des bases de données
+
+# Configuration sudo
+setup_sudo=Configuration de sudo pour le lancement sans mot de passe
+setup_sudo_nopasswd=Configuration de sudo NOPASSWD pour le lancement sans mot de passe...
+sudo_rule_added=Règle sudoers ajoutée pour l'utilisateur
+rule_added=Règle ajoutée
+rules_exist=Les règles existent déjà dans sudoers
+sudo_syntax_error=Erreur de syntaxe sudoers, règles non ajoutées
+
+# PATH
+setup_path=Configuration du PATH
+
+# Installation terminée
+install_complete=INSTALLATION TERMINÉE
+files_installed=📁 Fichiers installés
+wallet_folder=📁 Dossier de portefeuilles
+language=🌐 Langue
+os=💻 OS
+launch_methods=🚀 Méthodes de lancement
+terminal=Depuis le terminal
+menu=Depuis le menu d'applications
+no_password=sans mot de passe
+important=📌 Important
+wallets_saved=Les portefeuilles seront stockés dans
+menu_appearance=Pour apparaître dans le menu, exécutez
+logout_required=Ou déconnectez-vous et reconnectez-vous
+
+# Vérification
+verification=Vérification de l'installation
+desktop_created=Fichier .desktop créé
+command_available=Commande go-ethereum-cli disponible
+wallet_folder_ready=Dossier /root/.ethereum/keystore prêt
+
+# Nettoyage
+delete_source=Supprimer les fichiers sources? (y/n)
+source_deleted=Fichiers sources supprimés
+
+# Final
+done=TERMINÉ
+now_available=Le programme s'appelle maintenant 'Go Ethereum-cli' dans le menu
+launch=Lancer
+or_from_menu=ou depuis le menu d'applications
+subtitle=Gestion de Portefeuille Crypto Ethereum
+app_description=Gestion de Portefeuille Crypto Ethereum

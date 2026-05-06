@@ -1,0 +1,113 @@
+# Language selection
+select_lang=SELECT INTERFACE LANGUAGE
+system_lang=System LANG value
+auto_detected=Automatically detected language
+press_enter=Press Enter to use
+or_select_number=or select language number
+your_choice=Your choice
+using_auto=Using automatically detected language
+invalid_choice=Invalid choice
+using_default=using English by default
+selected_lang=Selected language
+default_selected=English selected by default
+
+# Access mode
+access_mode_title=SELECT ACCESS MODE
+select_access_mode=Select program launch mode:
+without_password=Without password
+without_password_desc=program will run without password prompt (requires sudo NOPASSWD setup)
+with_password=With password
+with_password_desc=password will be required each launch (standard security mode)
+selected_without_password=Selected mode: WITHOUT PASSWORD
+selected_with_password=Selected mode: WITH PASSWORD
+access_mode=Access mode
+no_password_required=password not required
+password_required_info=password required
+invalid_choice_default=Invalid choice, using mode: WITH PASSWORD
+
+# OS selection
+select_os=SELECT OPERATING SYSTEM
+arch=Arch Linux / Manjaro
+ubuntu=Ubuntu / Debian
+gentoo=Gentoo Linux
+auto_detect_os=Auto detect
+selected=Selected
+
+# Password and authentication
+password_required=AUTHENTICATION REQUIRED
+password_request=Administrator rights required for installation
+wrong_password=Wrong password or no sudo rights
+check_sudo_group=Make sure user is added to sudo group
+auth_success=Authentication successful
+
+# Installation
+install_packages=Starting package installation for
+found_script=Found script
+install_success=Package installation completed successfully
+install_error=Package installation completed with errors
+install_script_not_found=Installation script not found
+
+# Script search
+looking_for_script=Looking for installation script in
+available_files=Available files
+found=Found
+files_in_folder=Files in folder
+folder_not_found=Folder not found
+
+# Creating folders and files
+create_folder=Creating wallet folder
+folder_exists=Folder /root/.ethereum/keystore already exists
+folder_created=Folder /root/.ethereum/keystore created
+permissions_set=Permissions set (700)
+create_dir=Creating directory
+copy_files=Copying and configuring files
+copy_icon=Copying icon
+create_symlink=Creating symbolic link
+create_desktop=Creating .desktop file for application menu
+
+# Cache update
+update_cache=Updating icon cache and databases
+
+# Sudo setup
+setup_sudo=Configuring sudo for passwordless launch
+setup_sudo_nopasswd=Setting up sudo NOPASSWD for passwordless launch...
+sudo_rule_added=Sudoers rule added for user
+rule_added=Rule added
+rules_exist=Rules already exist in sudoers
+sudo_syntax_error=Sudoers syntax error, rules not added
+
+# PATH
+setup_path=PATH configuration
+
+# Installation complete
+install_complete=INSTALLATION COMPLETE
+files_installed=📁 Files installed
+wallet_folder=📁 Wallet folder
+language=🌐 Language
+os=💻 OS
+launch_methods=🚀 Launch methods
+terminal=From terminal
+menu=From application menu
+no_password=without password
+important=📌 Important
+wallets_saved=Wallets will be stored in
+menu_appearance=To appear in menu run
+logout_required=Or logout and login again
+
+# Verification
+verification=Installation verification
+desktop_created=.desktop file created
+command_available=go-ethereum-cli command available
+wallet_folder_ready=Folder /root/.ethereum/keystore ready
+
+# Cleanup
+delete_source=Delete source files? (y/n)
+source_deleted=Source files deleted
+
+# Final
+done=DONE
+now_available=Program is now called 'Go Ethereum-cli' in menu
+launch=Launch
+or_from_menu=or from application menu
+subtitle=Ethereum Crypto Wallet Management
+app_description=Ethereum Crypto Wallet Management

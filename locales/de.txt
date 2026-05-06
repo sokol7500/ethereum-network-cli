@@ -1,0 +1,113 @@
+# Sprachauswahl
+select_lang=OBERFLÄCHENSPRACHE WÄHLEN
+system_lang=System LANG-Wert
+auto_detected=Automatisch erkannte Sprache
+press_enter=Enter drücken zum Verwenden
+or_select_number=oder Sprachnummer wählen
+your_choice=Ihre Wahl
+using_auto=Verwende automatisch erkannte Sprache
+invalid_choice=Ungültige Auswahl
+using_default=verwende standardmäßig English
+selected_lang=Gewählte Sprache
+default_selected=Deutsch standardmäßig ausgewählt
+
+# Zugriffsmodus
+access_mode_title=ZUGRIFFSMODUS WÄHLEN
+select_access_mode=Programmstartmodus wählen:
+without_password=Ohne Passwort
+without_password_desc=Programm startet ohne Passwortabfrage (erfordert sudo NOPASSWD Einrichtung)
+with_password=Mit Passwort
+with_password_desc=Passwort wird bei jedem Start abgefragt (Standard-Sicherheitsmodus)
+selected_without_password=Modus gewählt: OHNE PASSWORT
+selected_with_password=Modus gewählt: MIT PASSWORT
+access_mode=Zugriffsmodus
+no_password_required=Passwort nicht erforderlich
+password_required_info=Passwort erforderlich
+invalid_choice_default=Ungültige Auswahl, verwende Modus: MIT PASSWORT
+
+# Betriebssystemauswahl
+select_os=BETRIEBSSYSTEM WÄHLEN
+arch=Arch Linux / Manjaro
+ubuntu=Ubuntu / Debian
+gentoo=Gentoo Linux
+auto_detect_os=Automatisch erkennen
+selected=Ausgewählt
+
+# Passwort und Authentifizierung
+password_required=AUTHENTIFIZIERUNG ERFORDERLICH
+password_request=Administratorrechte für Installation erforderlich
+wrong_password=Falsches Passwort oder keine sudo-Rechte
+check_sudo_group=Stellen Sie sicher, dass der Benutzer zur sudo-Gruppe gehört
+auth_success=Authentifizierung erfolgreich
+
+# Installation
+install_packages=Starte Paketinstallation für
+found_script=Skript gefunden
+install_success=Paketinstallation erfolgreich abgeschlossen
+install_error=Paketinstallation mit Fehlern abgeschlossen
+install_script_not_found=Installationsskript nicht gefunden
+
+# Skriptsuche
+looking_for_script=Suche Installationsskript in
+available_files=Verfügbare Dateien
+found=Gefunden
+files_in_folder=Dateien im Ordner
+folder_not_found=Ordner nicht gefunden
+
+# Ordner und Dateien erstellen
+create_folder=Erstelle Wallet-Ordner
+folder_exists=Ordner /root/.ethereum/keystore existiert bereits
+folder_created=Ordner /root/.ethereum/keystore erstellt
+permissions_set=Berechtigungen gesetzt (700)
+create_dir=Erstelle Verzeichnis
+copy_files=Kopiere und konfiguriere Dateien
+copy_icon=Kopiere Icon
+create_symlink=Erstelle symbolischen Link
+create_desktop=Erstelle .desktop-Datei für Anwendungsmenü
+
+# Cache-Update
+update_cache=Aktualisiere Icon-Cache und Datenbanken
+
+# Sudo-Einrichtung
+setup_sudo=Konfiguriere sudo für passwortlosen Start
+setup_sudo_nopasswd=Richte sudo NOPASSWD für passwortlosen Start ein...
+sudo_rule_added=Sudoers-Regel für Benutzer hinzugefügt
+rule_added=Regel hinzugefügt
+rules_exist=Regeln existieren bereits in sudoers
+sudo_syntax_error=Sudoers-Syntaxfehler, Regeln nicht hinzugefügt
+
+# PATH
+setup_path=PATH-Konfiguration
+
+# Installation abgeschlossen
+install_complete=INSTALLATION ABGESCHLOSSEN
+files_installed=📁 Dateien installiert
+wallet_folder=📁 Wallet-Ordner
+language=🌐 Sprache
+os=💻 Betriebssystem
+launch_methods=🚀 Startmethoden
+terminal=Vom Terminal
+menu=Vom Anwendungsmenü
+no_password=ohne Passwort
+important=📌 Wichtig
+wallets_saved=Wallets werden gespeichert in
+menu_appearance=Um im Menü zu erscheinen, führen Sie aus
+logout_required=Oder melden Sie sich ab und wieder an
+
+# Überprüfung
+verification=Installationsüberprüfung
+desktop_created=.desktop-Datei erstellt
+command_available=go-ethereum-cli Befehl verfügbar
+wallet_folder_ready=Ordner /root/.ethereum/keystore bereit
+
+# Bereinigung
+delete_source=Quelldateien löschen? (y/n)
+source_deleted=Quelldateien gelöscht
+
+# Abschluss
+done=FERTIG
+now_available=Programm heißt jetzt 'Go Ethereum-cli' im Menü
+launch=Starten
+or_from_menu=oder aus dem Anwendungsmenü
+subtitle=Ethereum Crypto Wallet Verwaltung
+app_description=Ethereum Crypto Wallet Verwaltung

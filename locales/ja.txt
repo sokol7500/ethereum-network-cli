@@ -1,0 +1,113 @@
+# 言語選択
+select_lang=インターフェース言語を選択
+system_lang=システムLANG値
+auto_detected=自動検出された言語
+press_enter=Enterキーを押して使用
+or_select_number=または言語番号を選択
+your_choice=選択
+using_auto=自動検出された言語を使用
+invalid_choice=無効な選択
+using_default=デフォルトで英語を使用
+selected_lang=選択された言語
+default_selected=日本語がデフォルトで選択されました
+
+# アクセスモード
+access_mode_title=アクセスモードを選択
+select_access_mode=プログラム起動モードを選択:
+without_password=パスワードなし
+without_password_desc=パスワードなしで起動（sudo NOPASSWDの設定が必要）
+with_password=パスワードあり
+with_password_desc=起動時にパスワードが必要（標準セキュリティモード）
+selected_without_password=選択モード: パスワードなし
+selected_with_password=選択モード: パスワードあり
+access_mode=アクセスモード
+no_password_required=パスワード不要
+password_required_info=パスワード必要
+invalid_choice_default=無効な選択、モード: パスワードありを使用
+
+# OS選択
+select_os=オペレーティングシステムを選択
+arch=Arch Linux / Manjaro
+ubuntu=Ubuntu / Debian
+gentoo=Gentoo Linux
+auto_detect_os=自動検出
+selected=選択済み
+
+# パスワードと認証
+password_required=認証が必要です
+password_request=インストールには管理者権限が必要です
+wrong_password=パスワードが間違っているかsudo権限がありません
+check_sudo_group=ユーザーがsudoグループに追加されていることを確認してください
+auth_success=認証成功
+
+# インストール
+install_packages=パッケージインストールを開始:
+found_script=スクリプトが見つかりました
+install_success=パッケージインストールが正常に完了しました
+install_error=パッケージインストールがエラーで完了しました
+install_script_not_found=インストールスクリプトが見つかりません
+
+# スクリプト検索
+looking_for_script=インストールスクリプトを検索中:
+available_files=利用可能なファイル
+found=見つかりました
+files_in_folder=フォルダ内のファイル
+folder_not_found=フォルダが見つかりません
+
+# フォルダとファイルの作成
+create_folder=ウォレットフォルダを作成中
+folder_exists=フォルダ /root/.ethereum/keystore は既に存在します
+folder_created=フォルダ /root/.ethereum/keystore を作成しました
+permissions_set=権限を設定しました (700)
+create_dir=ディレクトリを作成中
+copy_files=ファイルをコピーして設定中
+copy_icon=アイコンをコピー中
+create_symlink=シンボリックリンクを作成中
+create_desktop=アプリケーションメニュー用.desktopファイルを作成中
+
+# キャッシュ更新
+update_cache=アイコンキャッシュとデータベースを更新中
+
+# Sudo設定
+setup_sudo=パスワードなし起動用にsudoを設定中
+setup_sudo_nopasswd=パスワードなし起動用にsudo NOPASSWDを設定中...
+sudo_rule_added=ユーザーのsudoersルールを追加しました
+rule_added=ルールを追加しました
+rules_exist=ルールは既にsudoersに存在します
+sudo_syntax_error=sudoers構文エラー、ルールは追加されませんでした
+
+# PATH
+setup_path=PATH設定
+
+# インストール完了
+install_complete=インストール完了
+files_installed=📁 インストールされたファイル
+wallet_folder=📁 ウォレットフォルダ
+language=🌐 言語
+os=💻 OS
+launch_methods=🚀 起動方法
+terminal=端末から
+menu=アプリケーションメニューから
+no_password=パスワードなし
+important=📌 重要
+wallets_saved=ウォレットの保存場所:
+menu_appearance=メニューに表示するには実行:
+logout_required=またはログアウトして再ログイン
+
+# 確認
+verification=インストール確認
+desktop_created=.desktopファイル作成完了
+command_available=go-ethereum-cliコマンド利用可能
+wallet_folder_ready=フォルダ /root/.ethereum/keystore 準備完了
+
+# クリーンアップ
+delete_source=ソースファイルを削除しますか？ (y/n)
+source_deleted=ソースファイルを削除しました
+
+# 最終
+done=完了
+now_available=プログラムはメニューで 'Go Ethereum-cli' として利用可能です
+launch=起動
+or_from_menu=またはアプリケーションメニューから
+subtitle=Ethereum暗号通貨ウォレット管理
+app_description=Ethereum暗号通貨ウォレット管理

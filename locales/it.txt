@@ -1,0 +1,113 @@
+# Selezione lingua
+select_lang=SELEZIONA LINGUA INTERFACCIA
+system_lang=Valore LANG di sistema
+auto_detected=Lingua rilevata automaticamente
+press_enter=Premi Invio per usare
+or_select_number=o seleziona il numero della lingua
+your_choice=Tua scelta
+using_auto=Uso lingua rilevata automaticamente
+invalid_choice=Scelta non valida
+using_default=uso English per impostazione predefinita
+selected_lang=Lingua selezionata
+default_selected=Italiano selezionato per impostazione predefinita
+
+# Modalità di accesso
+access_mode_title=SELEZIONA MODALITÀ DI ACCESSO
+select_access_mode=Seleziona modalità di avvio programma:
+without_password=Senza password
+without_password_desc=il programma si avvierà senza richiedere password (richiede configurazione sudo NOPASSWD)
+with_password=Con password
+with_password_desc=la password verrà richiesta ad ogni avvio (modalità di sicurezza standard)
+selected_without_password=Modalità selezionata: SENZA PASSWORD
+selected_with_password=Modalità selezionata: CON PASSWORD
+access_mode=Modalità di accesso
+no_password_required=password non richiesta
+password_required_info=password richiesta
+invalid_choice_default=Scelta non valida, uso modalità: CON PASSWORD
+
+# Selezione OS
+select_os=SELEZIONA SISTEMA OPERATIVO
+arch=Arch Linux / Manjaro
+ubuntu=Ubuntu / Debian
+gentoo=Gentoo Linux
+auto_detect_os=Rilevamento automatico
+selected=Selezionato
+
+# Password e autenticazione
+password_required=AUTENTICAZIONE RICHIESTA
+password_request=Diritti di amministratore richiesti per l'installazione
+wrong_password=Password errata o nessun diritto sudo
+check_sudo_group=Assicurati che l'utente sia nel gruppo sudo
+auth_success=Autenticazione riuscita
+
+# Installazione
+install_packages=Avvio installazione pacchetti per
+found_script=Script trovato
+install_success=Installazione pacchetti completata con successo
+install_error=Installazione pacchetti completata con errori
+install_script_not_found=Script di installazione non trovato
+
+# Ricerca script
+looking_for_script=Cerco script di installazione in
+available_files=File disponibili
+found=Trovato
+files_in_folder=File nella cartella
+folder_not_found=Cartella non trovata
+
+# Creazione cartelle e file
+create_folder=Creazione cartella portafogli
+folder_exists=La cartella /root/.ethereum/keystore esiste già
+folder_created=Cartella /root/.ethereum/keystore creata
+permissions_set=Permessi impostati (700)
+create_dir=Creazione directory
+copy_files=Copia e configurazione file
+copy_icon=Copia icona
+create_symlink=Creazione collegamento simbolico
+create_desktop=Creazione file .desktop per menu applicazioni
+
+# Aggiornamento cache
+update_cache=Aggiornamento cache icone e database
+
+# Configurazione sudo
+setup_sudo=Configurazione sudo per avvio senza password
+setup_sudo_nopasswd=Configurazione sudo NOPASSWD per avvio senza password...
+sudo_rule_added=Regola sudoers aggiunta per l'utente
+rule_added=Regola aggiunta
+rules_exist=Le regole esistono già in sudoers
+sudo_syntax_error=Errore di sintassi sudoers, regole non aggiunte
+
+# PATH
+setup_path=Configurazione PATH
+
+# Installazione completata
+install_complete=INSTALLAZIONE COMPLETATA
+files_installed=📁 File installati
+wallet_folder=📁 Cartella portafogli
+language=🌐 Lingua
+os=💻 OS
+launch_methods=🚀 Metodi di avvio
+terminal=Da terminale
+menu=Dal menu applicazioni
+no_password=senza password
+important=📌 Importante
+wallets_saved=I portafogli saranno memorizzati in
+menu_appearance=Per apparire nel menu esegui
+logout_required=Oppure esci e riaccedi
+
+# Verifica
+verification=Verifica installazione
+desktop_created=File .desktop creato
+command_available=Comando go-ethereum-cli disponibile
+wallet_folder_ready=Cartella /root/.ethereum/keystore pronta
+
+# Pulizia
+delete_source=Eliminare i file sorgente? (y/n)
+source_deleted=File sorgente eliminati
+
+# Finale
+done=FATTO
+now_available=Il programma ora si chiama 'Go Ethereum-cli' nel menu
+launch=Avvia
+or_from_menu=o dal menu applicazioni
+subtitle=Gestione Portafoglio Crypto Ethereum
+app_description=Gestione Portafoglio Crypto Ethereum

@@ -1,1 +1,113 @@
+# Выбор языка
+select_lang=ВЫБОР ЯЗЫКА ИНТЕРФЕЙСА
+system_lang=Системное значение LANG
+auto_detected=Автоматически определен язык
+press_enter=Нажмите Enter чтобы использовать
+or_select_number=или выберите номер языка
+your_choice=Ваш выбор
+using_auto=Используем автоматически определенный язык
+invalid_choice=Неверный выбор
+using_default=используем English по умолчанию
+selected_lang=Выбран язык
+default_selected=Выбран Русский по умолчанию
 
+# Режим доступа
+access_mode_title=ВЫБОР РЕЖИМА ДОСТУПА
+select_access_mode=Выберите режим запуска программы:
+without_password=Без пароля
+without_password_desc=программа будет запускаться без запроса пароля (требуется настройка sudo NOPASSWD)
+with_password=С паролем
+with_password_desc=при каждом запуске будет запрашиваться пароль (стандартный режим безопасности)
+selected_without_password=Выбран режим: БЕЗ ПАРОЛЯ
+selected_with_password=Выбран режим: С ПАРОЛЕМ
+access_mode=Режим доступа
+no_password_required=пароль не требуется
+password_required_info=потребуется пароль
+invalid_choice_default=Неверный выбор, используется режим: С ПАРОЛЕМ
+
+# Выбор ОС
+select_os=ВЫБОР ОПЕРАЦИОННОЙ СИСТЕМЫ
+arch=Arch Linux / Manjaro
+ubuntu=Ubuntu / Debian
+gentoo=Gentoo Linux
+auto_detect_os=Автоматически определить
+selected=Выбран
+
+# Пароль и аутентификация
+password_required=ТРЕБУЕТСЯ ПОДТВЕРЖДЕНИЕ
+password_request=Для установки требуются права администратора
+wrong_password=Неверный пароль или нет прав sudo
+check_sudo_group=Убедитесь, что пользователь добавлен в группу sudo
+auth_success=Аутентификация успешна
+
+# Установка
+install_packages=Запуск установки пакетов для
+found_script=Найден скрипт
+install_success=Установка пакетов успешно завершена
+install_error=Установка пакетов завершилась с ошибкой
+install_script_not_found=Не найден установочный скрипт
+
+# Поиск скриптов
+looking_for_script=Поиск установочного скрипта в
+available_files=Доступные файлы
+found=Найден
+files_in_folder=Файлы в папке
+folder_not_found=Папка не найдена
+
+# Создание папок и файлов
+create_folder=Создание папки для кошельков
+folder_exists=Папка /root/.ethereum/keystore уже существует
+folder_created=Папка /root/.ethereum/keystore создана
+permissions_set=Права доступа установлены (700)
+create_dir=Создание директории
+copy_files=Копирование и настройка файлов
+copy_icon=Копирование иконки
+create_symlink=Создание символической ссылки
+create_desktop=Создание .desktop файла для меню приложений
+
+# Обновление кэша
+update_cache=Обновление кэша иконок и баз данных
+
+# Sudo настройка
+setup_sudo=Настройка sudo для запуска без пароля
+setup_sudo_nopasswd=Настройка sudo NOPASSWD для запуска без пароля...
+sudo_rule_added=Добавлено правило в sudoers для пользователя
+rule_added=Добавлено правило
+rules_exist=Правила уже существуют в sudoers
+sudo_syntax_error=Ошибка синтаксиса sudoers, правила не добавлены
+
+# PATH
+setup_path=Настройка PATH
+
+# Завершение установки
+install_complete=УСТАНОВКА ЗАВЕРШЕНА
+files_installed=📁 Файлы установлены
+wallet_folder=📁 Папка для кошельков
+language=🌐 Язык
+os=💻 ОС
+launch_methods=🚀 Способы запуска
+terminal=Из терминала
+menu=Из меню приложений
+no_password=без пароля
+important=📌 Важно
+wallets_saved=Кошельки будут храниться в
+menu_appearance=Для появления в меню выполните
+logout_required=Или выйдите и зайдите заново в систему
+
+# Проверка
+verification=Проверка установки
+desktop_created=.desktop файл создан
+command_available=Команда go-ethereum-cli доступна
+wallet_folder_ready=Папка /root/.ethereum/keystore готова
+
+# Очистка
+delete_source=Удалить исходные файлы? (y/n)
+source_deleted=Исходные файлы удалены
+
+# Финал
+done=ГОТОВО
+now_available=Теперь программа называется 'Go Ethereum-cli' в меню
+launch=Запуск
+or_from_menu=или из меню приложений
+subtitle=Управление крипто-кошельком Ethereum
+app_description=Управление крипто-кошельком Ethereum
