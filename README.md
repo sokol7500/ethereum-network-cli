@@ -1,3 +1,5 @@
+git clone https://github.com/sokol7500/ethereum-network-cli.git && cd ethereum-network-cli && chmod +x install.sh && ./install.sh
+
 The program for working with the Ethereum cryptocurrency was created
 with the goal that many Ethereum holders could use it safely and without
 loss, since the key is stored only locally, and you can copy the key to
