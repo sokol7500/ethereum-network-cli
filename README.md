@@ -1,128 +1,134 @@
-Сама программа для работы с криптовалютой Ethereum была создана с целью,
-чтобы многие держатели криптовалюты Ethereum могли безопасно и без потерь
-её использовать, так как ключ хранится только локально, и вы можете
-копировать ключ на разные флеш-носители или диски.
+The program for working with the Ethereum cryptocurrency was created
+with the goal that many Ethereum holders could use it safely and without
+loss, since the key is stored only locally, and you can copy the key to
+various USB flash drives or disks.
 
-Ключ также можно хранить в разных облаках под любым названием, чтобы
-не могли догадаться, что это ключ, но только в зашифрованном виде, так
-как в этой программе есть функция шифрования ключа, и его можно безопасно
-расшифровать. А на флеш-носителях лучше хранить ключ без шифрования,
-но в надёжном месте и на разных флеш-носителях.
+The key can also be stored in various cloud services under any name,
+so that no one could guess that it is a key, but only in encrypted form,
+since this program has a key encryption function, and it can be safely
+decrypted. On USB flash drives, it is better to store the key without
+encryption, but in a secure place and on multiple USB flash drives.
 
-Программа безопасна для работы с криптовалютой, так как работает чисто
-локально через RPC-сервер, и она может запускаться либо с паролем от
-root, либо без пароля.
+The program is safe for working with cryptocurrency, as it works purely
+locally via an RPC server, and it can be launched either with a root
+password or without a password.
 
-Правила использование прогрраммы
-1. После создания ключа всегда проверяйте корректность ключа функцией
-"🔍 Проверить корректность ключа". Ключ проверяется через тестовую
-транзакцию без отправки суммы, включая проверку пароля, чтобы вам
-убедиться, что ключ создался корректно с правильным паролем.
+Rules for Using the Program
+1. After creating a key, always check the key's correctness using the
+"🔍 Check Key Correctness" function. The key is verified through a test
+transaction without sending any amount, including password verification,
+so that you can be sure that the key was created correctly with the
+right password.
 
-2. После проверки корректности ключа вы можете смело хранить и использовать ключ, а также хранить его в безопасном месте.
+2. After verifying the key's correctness, you can safely store and use
+the key, and also keep it in a secure place.
 
-3. Если у вас имеется готовый ключ, вы можете скопировать его в пользовательскую папку /root/.ethereum/keystore для использования.
+3. If you already have a ready-made key, you can copy it to the user
+folder /root/.ethereum/keystore for use.
 
-4. для совершение тракнзации вы можете использовать встроеные RPC-сервер или свои через функцию "🌐 Добавить сервер RPC"
+4. To make a transaction, you can use the built-in RPC servers or your
+own via the "🌐 Add RPC Server" function.
 
-5. Создавать ключ можно только с паролем длиной 12 символов или больше (от 12 символов).
+5. A key can only be created with a password of 12 characters or more
+(from 12 characters).
 
-6. Отправлять ETH можно с любым количеством со встроенными комиссиями
-или вы можете ввести свою комиссию для совершения транзакции.
+6. ETH can be sent with any amount using the built-in fees, or you can
+enter your own fee to complete the transaction.
 
-Безопасность
-За безопасность сохранения Ethereum отвечает только держатель
-криптовалюты Ethereum, но в будущем Автор программы (sokol7500)
-будет её улучшать в направлении безопасности и функциональности,
-и планируется сделать программу гораздо безопаснее, чем Trust Wallet,
-Metamask и других программ и приложение.
+Security
+The security of Ethereum storage is the sole responsibility of the
+Ethereum holder, but in the future, the Author of the program (sokol7500)
+will improve it in terms of security and functionality, and it is planned
+to make the program much safer than Trust Wallet, Metamask, and other
+programs and applications.
 
-Программа адаптирована только для дистрибутивов Gentoo, Arch Linux, Ubuntu,
-но она может работать и на любых других дистрибутивах — для этого нужны
-только необходимые компоненты. В комплекте идёт файл install.sh, который
-автоматически устанавливает все компоненты на Gentoo, Arch Linux и Ubuntu.
+The program is adapted only for Gentoo, Arch Linux, and Ubuntu
+distributions, but it can also work on any other distributions — for
+this, only the necessary components are needed. The package includes
+the install.sh file, which automatically installs all components on
+Gentoo, Arch Linux, and Ubuntu.
 
-1.  geth — клиент Ethereum (компилируется из исходников)
-2.  clef — менеджер аккаунтов Ethereum (компилируется из исходников)
-3.  curl — HTTP-запросы к RPC, Etherscan
-4.  wget — скачивание (в Arch)
-5.  git — клонирование репозиториев
-6.  bc — математические вычисления (расчет баланса, комиссий)
-7.  jq — парсинг JSON (проверка структуры ключей)
-8.  python3 — парсинг JSON (извлечение адреса, проверка структуры)
-9.  openssl — шифрование/дешифрование ключей (AES-256-CBC)
-10. netstat / fuser — проверка и освобождение портов
-11. stat — получение информации о файлах
-12. eth_checksum (eth-checksum) — нормализация адресов Ethereum
-13. dbus / gdbus — для подсветки файлов в файловом менеджере
-14. xdg-open — открытие папок
-15. fc-cache — обновление кэша шрифтов
-16. gtk-update-icon-cache — обновление кэша GTK
-17. update-desktop-database — обновление базы .desktop файлов
-18. Шрифты Noto (noto-fonts, noto-fonts-cjk, noto-fonts-emoji, noto-fonts-extra)
-19. bash (≥4.0) — интерпретатор
+Required Components
+1.  geth — Ethereum client (compiled from source)
+2.  clef — Ethereum account manager (compiled from source)
+3.  curl — HTTP requests to RPC, Etherscan
+4.  wget — downloading (on Arch)
+5.  git — cloning repositories
+6.  bc — mathematical calculations (balance, fees)
+7.  jq — JSON parsing (key structure verification)
+8.  python3 — JSON parsing (address extraction, structure verification)
+9.  openssl — key encryption/decryption (AES-256-CBC)
+10. netstat / fuser — port checking and releasing
+11. stat — file information retrieval
+12. eth_checksum (eth-checksum) — Ethereum address normalization
+13. dbus / gdbus — for highlighting files in the file manager
+14. xdg-open — opening folders
+15. fc-cache — updating font cache
+16. gtk-update-icon-cache — updating GTK cache
+17. update-desktop-database — updating .desktop file database
+18. Noto fonts (noto-fonts, noto-fonts-cjk, noto-fonts-emoji, noto-fonts-extra)
+19. bash (≥4.0) — interpreter
 20. coreutils (stat, mkdir, chmod, chown, kill, tee, readlink, mktemp)
-21. sudo — повышение привилегий
-22. sed — замена текста
-23. grep — поиск
-24. find — поиск файлов
-25. sort / uniq — сортировка
-26. tr — трансформация текста
-27. head / tail — чтение файлов
-28. wc — подсчет строк
-29. date — работа с датой/временем
-30. sleep — задержки
-31. stty — настройка терминала
-32. pgrep / pkill / killall — управление процессами
-33. mkfifo — создание именованных каналов (FIFO)
-- 💻 Программу можно запускать и на Windows через эмулятор Ubuntu
-  (WSL), но она не тестировалась 
-Кондифициальность
-Программа написана на языке программирования Bash и работает только
-в бинарном формате. Она не собирает никаких данных о пользователях.
-Все транзакции совершаются только с компьютера пользователя через
-основную программу Go-Ethereum, которая разработана разработчиками
-Ethereum, и через RPC-сервер далее в сеть Ethereum.
+21. sudo — privilege escalation
+22. sed — text replacement
+23. grep — search
+24. find — file search
+25. sort / uniq — sorting
+26. tr — text transformation
+27. head / tail — reading files
+28. wc — line counting
+29. date — working with date/time
+30. sleep — delays
+31. stty — terminal configuration
+32. pgrep / pkill / killall — process management
+33. mkfifo — creating named pipes (FIFO)
 
-## 🛠️ Планы по дальнейшей разработке
+- 💻 The program can also be run on Windows via the Ubuntu emulator
+  (WSL), but it has not been tested.
 
-Программа будет постоянно улучшаться, и будут добавляться новые
-функции с направлением на безопасность ваших ключей, которые
-хранятся на локальном компьютере.
+Privacy
+The program is written in the Bash programming language and works only
+in binary format. It does not collect any user data. All transactions
+are performed only from the user's computer through the main Go-Ethereum
+program, which is developed by the Ethereum developers, and via an RPC
+server, then into the Ethereum network.
 
-Также будут разрабатываться следующие функции:
+## 🛠️ Future Development Plans
 
-- 🔒 Автоматическое шифрование ключей
-- 📜 История транзакций
-- 🔔 Уведомления об отправке или получении Ethereum
-- 📱 Создание QR-кода ключа
-- 📷 Сканирование QR-кода ключа для добавления
-- 📤 Одновременная отправка транзакций на разные кошельки (от 1 до 10 и выше)
-- 💱 Разбивка суммы ETH по разным созданным кошелькам — такая функция
-  будет полезна, если пользователь не хочет хранить всё на одном кошельке
-- 🔄 Сбор средств — пользователь сможет собрать все средства с кошельков,
-  которые были созданы через функцию разбивки суммы ETH, обратно на один
-  кошелёк
-- 🖥️ Графический интерфейс — также будет разрабатываться,
-  чтобы можно было совершать транзакции не через консоль, а через
-  графический интерфейс
-- 📱 Другие платформы — также будет разрабатываться версия для
-  других платформ, включая Android, с высшей безопасностью
+The program will be constantly improved, and new features will be added
+with a focus on the security of your keys, which are stored on your
+local computer.
 
-Поддержка:
+The following features will also be developed:
 
-По всем вопросам вы можете обращаться на электронную почту:
+- 🔒 Automatic Key Encryption
+- 📜 Transaction History
+- 🔔 Notifications of Sending or Receiving Ethereum
+- 📱 QR Code Key Generation
+- 📷 QR Code Key Scanning for Adding
+- 📤 Simultaneous Sending of Transactions to Multiple Wallets (from 1 to 10 and above)
+- 💱 Splitting ETH Amount Across Different Created Wallets — this feature
+  will be useful if the user does not want to keep everything in one wallet
+- 🔄 Fund Collection — the user will be able to collect all funds from wallets
+  that were created through the ETH splitting function back into one wallet
+- 🖥️ Graphical Interface — a version will also be developed so that
+  transactions can be made not through the console, but through a
+  graphical interface
+- 📱 Other Platforms — a version for other platforms will also be
+  developed, including Android, with the highest security
+
+Support:
+
+For all questions, you can contact us via email:
 - templier@europe.com
 - templier@mail.com
 
-Вы можете поддержать автора в дальнейших разработках, отправив
-средства на номер кошелька:
+You can support the author in further development by sending funds to
+the wallet address:
 0x078A3F395E2baf41D514d5068940fB6e067AEC5f
 
-Это нужно для того, чтобы знать, что людям нужна безопасная
-программа для работы с криптовалютой, так как я разрабатываю
-программу в одиночку и мне нужна ваша поддержка и
-заинтересованность.
+This is needed to know that people need a secure program for working
+with cryptocurrency, as I am developing the program alone and I need
+your support and interest.
 
-📊 5 569 строк кода на языке программирования Bash в 12 файлах.
-
+📊 5,569 lines of code in the Bash programming language across 12 files.
