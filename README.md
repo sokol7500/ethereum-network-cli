@@ -116,8 +116,6 @@ The following features will also be developed:
 - 🖥️ Graphical Interface — a version will also be developed so that
   transactions can be made not through the console, but through a
   graphical interface
-- 📱 Other Platforms — a version for other platforms will also be
-  developed, including Android, with the highest security
 
 Support:
 
