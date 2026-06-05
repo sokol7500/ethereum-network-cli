@@ -125,7 +125,7 @@ For all questions, you can contact us via email:
 
 You can support the author in further development by sending funds to
 the wallet address:
-0x078A3F395E2baf41D514d5068940fB6e067AEC5f
+0x4AAECb2C5c3cCB8Acf8EEb9987134B49134c134b
 
 This is needed to know that people need a secure program for working
 with cryptocurrency, as I am developing the program alone and I need
